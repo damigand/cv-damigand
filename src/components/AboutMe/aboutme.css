@@ -1,0 +1,33 @@
+.aboutme {
+   display: grid;
+   grid-template-rows: 1fr;
+   grid-template-columns: 250px 1fr;
+   gap: 50px;
+   font-size: 50px;
+   align-items: center;
+}
+
+.aboutme-avatar img {
+   max-width: 250px;
+}
+
+.aboutme-data {
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+}
+
+.name {
+   max-width: 320px;
+   border-bottom: 1px solid white;
+}
+
+.name span {
+   font-size: 30px;
+   color: var(--grey);
+}
+
+.description {
+   font-size: 30px;
+   text-align: justify;
+}

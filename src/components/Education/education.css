@@ -1,0 +1,53 @@
+.education {
+   padding-top: var(--px-s);
+   padding-bottom: var(--px-s);
+   margin-top: var(--px-s);
+   text-align: center;
+   background-color: rgb(20, 20, 20);
+   border: 1px solid transparent;
+   border-radius: 150px;
+}
+
+.studies {
+   padding-top: var(--px-s);
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   font-size: 24px;
+}
+
+.study {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 10px;
+   padding-bottom: 15px;
+   border-bottom: 1px solid white;
+}
+
+.study-data {
+   width: 100%;
+   display: grid;
+   grid-template-rows: 1fr;
+   grid-template-columns: repeat(3, 1fr);
+}
+
+.study-source {
+   color: var(--grey);
+}
+
+.study-grade {
+   text-align: left;
+}
+
+.study-period {
+   text-align: right;
+}
+
+.study-finished {
+   color: var(--green);
+}
+
+.study-ongoing {
+   color: var(--blue);
+}

@@ -1,0 +1,43 @@
+.skills {
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   margin: var(--px-15);
+}
+
+.skills-data {
+   display: flex;
+   justify-content: center;
+   gap: 10px;
+   flex-wrap: wrap;
+}
+
+.skills-info {
+   display: flex;
+   justify-content: center;
+}
+
+.skills-info [class*='level'] {
+   border: none;
+}
+
+[class*='level'] {
+   padding: 5px 15px;
+   border-radius: 10px;
+   cursor: default;
+}
+
+.level-1 {
+   border: 2px solid var(--yellow);
+   color: var(--yellow);
+}
+
+.level-2 {
+   border: 2px solid var(--blue);
+   color: var(--blue);
+}
+
+.level-3 {
+   border: 2px solid var(--green);
+   color: var(--green);
+}

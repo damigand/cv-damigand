@@ -1,0 +1,39 @@
+:root {
+   --grey: grey;
+   --yellow: rgb(250, 248, 142);
+   --blue: lightblue;
+   --green: lightgreen;
+
+   --px-l: 15%;
+   --px-m: 7%;
+   --px-s: 3%;
+   --px-5: 5px;
+   --px-15: 15px;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   color: white;
+}
+
+body {
+   background-color: black;
+}
+
+header {
+   margin: var(--px-5) var(--px-25);
+   position: sticky;
+   top: 0;
+   left: 0;
+}
+
+.padding {
+   padding: 0px var(--px-l);
+}
+
+h1 {
+   text-align: center;
+   font-size: 60px;
+}

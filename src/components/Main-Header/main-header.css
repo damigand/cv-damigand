@@ -1,0 +1,41 @@
+.main-header {
+   display: flex;
+   list-style-type: none;
+   justify-content: space-around;
+   align-items: center;
+   height: 70px;
+   padding: 10px 0px;
+   border-bottom: 1px solid white;
+   font-size: 18px;
+   background-color: black;
+}
+
+.item-header {
+   padding: 1px 0px;
+   border-radius: 5px;
+   transition: 0.2s;
+}
+
+.item-header:hover {
+   padding: 10px 0px;
+   background-color: white;
+   color: black;
+}
+
+.item-header:hover a {
+   color: black;
+   transition: 0.2s;
+}
+
+.item-header a {
+   text-decoration: none;
+   color: white;
+}
+
+.main-header li {
+   cursor: pointer;
+   display: flex;
+   width: 120px;
+   justify-content: center;
+   align-items: center;
+}
