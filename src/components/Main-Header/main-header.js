@@ -10,7 +10,7 @@ export function mainHeader() {
             ${itemHeader('Experiencia', 'exp')}
             ${itemHeader('Proyectos', 'proyectos')}
             ${itemHeader('Contacto', 'contacto')}
-            ${itemHeader('Redes Sociales', 'redes')}
+            ${itemHeader('Social', 'redes')}
          </ul>
       </header>
    `;

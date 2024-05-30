@@ -1,5 +1,5 @@
 import './projects.css';
-import data from '../../data';
+import data from '@/data';
 
 export function sectionProjects() {
    return `

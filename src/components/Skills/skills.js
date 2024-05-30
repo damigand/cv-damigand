@@ -1,5 +1,5 @@
 import './skills.css';
-import data from '../../data';
+import data from '@/data';
 
 export function sectionSkills() {
    let skillElements = '';
@@ -8,7 +8,7 @@ export function sectionSkills() {
    }
 
    return `
-      <section class="skills">
+      <section class="skills" id="skills">
          <article class="skills-data">
             ${skillElements}
          </article>

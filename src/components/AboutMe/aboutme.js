@@ -1,5 +1,5 @@
 import './aboutme.css';
-import data from '../../data';
+import data from '../../../data';
 
 export function sectionAbout() {
    return `

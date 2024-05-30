@@ -1,21 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
 :root {
    --grey: grey;
-   --yellow: rgb(250, 248, 142);
-   --blue: lightblue;
-   --green: lightgreen;
+   --dark-grey: rgb(12, 12, 12);
+   --yellow: rgba(250, 248, 142, 0.6);
+   --blue: rgba(173, 216, 230, 0.8);
+   --green: rgba(144, 238, 144, 1);
 
    --px-l: 15%;
    --px-m: 7%;
    --px-s: 3%;
    --px-5: 5px;
    --px-15: 15px;
+   --px-25: 25px;
 }
 
 * {
+   font-family: 'Nunito', sans-serif;
    margin: 0;
    padding: 0;
    box-sizing: border-box;
-   color: white;
+   color: rgb(255, 255, 255);
 }
 
 body {
@@ -31,6 +36,7 @@ header {
 
 .padding {
    padding: 0px var(--px-l);
+   padding-top: var(--px-s);
 }
 
 h1 {

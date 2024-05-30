@@ -37,9 +37,10 @@ const data = {
          company: 'MyDance',
          startDate: 2023,
          endDate: 2024,
+         companyLink: 'https://www.mydance.zone/',
          monthDuration: 6,
          description:
-            'Puesto de desarrollador Fullstack Junior en MyDance, mejorando / implementando funcionalidades tanto en la aplicación web como en Android.',
+            'Puesto de desarrollador Fullstack Junior en MyDance, mejorando / implementando funcionalidades tanto en la aplicación web (HTML, CSS, Bootstrap, C#, JavaScript, ASP.NET) como en Android (Xamarin Forms, C#).',
       },
    ],
    skills: [

@@ -1,5 +1,5 @@
 import './education.css';
-import data from '../../data';
+import data from '@/data';
 
 export function sectionEducation() {
    const educations = data.education;
@@ -11,18 +11,18 @@ export function sectionEducation() {
    }
 
    return `
-      <section class="education padding">
+      <section class="education padding" id="estudios">
          <h1>Estudios</h1>
-            <article class="studies">
+            <div class="studies">
             ${educationElements}
-            </article>
+            </div>
       </section>
    `;
 }
 
 function educationItem(education) {
    return `
-      <div class="study">
+      <article class="study">
          <div class="study-title">
             <h2>${education.title}</h2>
          </div>
@@ -41,7 +41,7 @@ function educationItem(education) {
                </span>
             </div>
          </div>
-      </div>
+      </article>
       
    `;
 }

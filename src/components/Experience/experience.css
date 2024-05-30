@@ -1,0 +1,36 @@
+.experience {
+   display: flex;
+   flex-direction: column;
+   gap: var(--px-25);
+}
+
+.exp-info {
+   font-size: 18px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.exp-description {
+   font-style: italic;
+   text-align: justify;
+}
+
+.exp-item {
+   display: flex;
+   flex-direction: column;
+   gap: 25px;
+   padding-bottom: var(--px-15);
+   border-bottom: 1px solid white;
+}
+
+.exp-data {
+   font-size: 24px;
+   display: flex;
+   justify-content: space-between;
+}
+
+.exp-company,
+.exp-period span {
+   color: var(--grey);
+}

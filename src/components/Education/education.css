@@ -3,9 +3,7 @@
    padding-bottom: var(--px-s);
    margin-top: var(--px-s);
    text-align: center;
-   background-color: rgb(20, 20, 20);
-   border: 1px solid transparent;
-   border-radius: 150px;
+   background-color: var(--dark-grey);
 }
 
 .studies {
