@@ -8,8 +8,8 @@ export function sectionExperience() {
       expElements += expItem(exp);
    }
    return `
-      <section class="experience padding" id="exp">
-         <h1>Experiencia laboral</h1>
+      <section class="experience spacing" id="exp">
+         <h1>Experiencia</h1>
          ${expElements}
       </section>
    `;

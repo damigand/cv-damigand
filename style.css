@@ -13,6 +13,8 @@
    --px-5: 5px;
    --px-15: 15px;
    --px-25: 25px;
+
+   --header-height: 70px;
 }
 
 * {
@@ -21,6 +23,7 @@
    padding: 0;
    box-sizing: border-box;
    color: rgb(255, 255, 255);
+   scroll-behavior: smooth;
 }
 
 body {
@@ -34,12 +37,44 @@ header {
    left: 0;
 }
 
-.padding {
-   padding: 0px var(--px-l);
-   padding-top: var(--px-s);
+.spacing {
+   padding-left: var(--px-l);
+   padding-right: var(--px-l);
+   padding-top: var(--px-25);
+   padding-bottom: var(--px-25);
+   margin-top: var(--px-s);
+   margin-bottom: var(--px-s);
 }
 
 h1 {
    text-align: center;
    font-size: 60px;
+   margin-bottom: var(--px-s);
+}
+
+h1::after {
+   content: '';
+   border-bottom: 5px solid white;
+   display: block;
+   width: 10%;
+   margin: 0px auto;
+}
+
+.icon {
+   width: 20px;
+   height: 20px;
+}
+
+.icon-big {
+   width: 40px;
+   height: 40px;
+}
+
+#sobremi,
+#skills,
+#estudios,
+#exp,
+#proyectos,
+#contacto {
+   scroll-margin-top: calc(var(--header-height) + 100px);
 }

@@ -1,0 +1,14 @@
+.contact-data {
+   display: flex;
+   flex-direction: column;
+   gap: 35px;
+}
+
+.contact-item {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   font-size: 36px;
+   gap: 5px;
+}

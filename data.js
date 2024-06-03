@@ -3,6 +3,7 @@ const data = {
    surname: 'Miguel Andrés',
    email: 'damigand700@gmail.com',
    phone: 654856683,
+   github: 'https://github.com/damigand',
    picture: './avatar.png',
    description:
       'Aspirante a programador fullstack y apasionado por los videojuegos. Soy una persona organizada y me esfuerzo por dar lo mejor de mi tanto dentro como fuera del ámbito profesional.',
@@ -103,16 +104,16 @@ const data = {
          title: 'Recreación Pinterest con Unsplash y JS',
          description:
             'Recreación Pinterest usando Unsplash para la obtención de imágenes y JS para el resto de la funcionalidad de la web.',
-         link: 'https://damigand-pinterest.netlify.app/',
+         link: 'https://damigand-pinterest.netlify.app',
          repo: 'https://github.com/damigand/pinterest_damigand',
-         preview: '',
+         preview: './pinterest.png',
       },
       {
          title: 'Simulador de pokédex con JS',
          description: 'Simulación de búsqueda de pokémon usando solamente JavaScript y datos estáticos.',
-         link: 'https://damigand-pokedex.netlify.app/',
+         link: 'https://damigand-pokedex.netlify.app',
          repo: 'https://github.com/damigand/pokedex',
-         preview: '',
+         preview: './pokedex.png',
       },
    ],
 };

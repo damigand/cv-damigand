@@ -11,7 +11,7 @@ export function sectionEducation() {
    }
 
    return `
-      <section class="education padding" id="estudios">
+      <section class="education spacing" id="estudios">
          <h1>Estudios</h1>
             <div class="studies">
             ${educationElements}

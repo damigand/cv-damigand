@@ -1,13 +1,9 @@
 .education {
-   padding-top: var(--px-s);
-   padding-bottom: var(--px-s);
-   margin-top: var(--px-s);
    text-align: center;
    background-color: var(--dark-grey);
 }
 
 .studies {
-   padding-top: var(--px-s);
    display: flex;
    flex-direction: column;
    gap: 10px;

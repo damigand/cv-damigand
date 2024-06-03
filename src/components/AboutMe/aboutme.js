@@ -3,7 +3,7 @@ import data from '../../../data';
 
 export function sectionAbout() {
    return `
-      <section class="aboutme padding" id="sobremi">
+      <section class="aboutme spacing" id="sobremi">
          <article class="aboutme-avatar">
             <img src="avatar.png" />
          </article>
