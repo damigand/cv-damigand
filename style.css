@@ -7,7 +7,7 @@
    --blue: rgba(173, 216, 230, 0.8);
    --green: rgba(144, 238, 144, 1);
 
-   --px-l: 15%;
+   --px-l: 10%;
    --px-m: 7%;
    --px-s: 3%;
    --px-5: 5px;
@@ -31,7 +31,7 @@ body {
 }
 
 header {
-   margin: var(--px-5) var(--px-25);
+   background-color: black;
    position: sticky;
    top: 0;
    left: 0;
@@ -70,6 +70,10 @@ h1::after {
    height: 40px;
 }
 
+.hidden {
+   display: none;
+}
+
 #sobremi,
 #skills,
 #estudios,
@@ -77,4 +81,22 @@ h1::after {
 #proyectos,
 #contacto {
    scroll-margin-top: calc(var(--header-height) + 100px);
+}
+
+@media (max-width: 1250px) {
+   .spacing {
+      padding-left: var(--px-m);
+      padding-right: var(--px-m);
+   }
+}
+
+@media (max-width: 420px) {
+   .spacing {
+      padding-left: var(--px-s);
+      padding-right: var(--px-s);
+   }
+
+   h1 {
+      font-size: 40px;
+   }
 }

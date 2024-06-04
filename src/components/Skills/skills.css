@@ -44,3 +44,13 @@
 .level-x {
    color: var(--grey);
 }
+
+@media (max-width: 420px) {
+   .skills-info div {
+      padding: 0px 8px;
+   }
+
+   .skill {
+      font-size: 13px;
+   }
+}

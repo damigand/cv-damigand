@@ -37,6 +37,7 @@ function educationItem(education) {
             <div class="study-period">
                ${education.yearStart} - ${education.yearEnd}
                <span class="${education.finished ? 'study-finished' : 'study-ongoing'}">
+               <br>
                   (${education.finished ? 'Terminado' : 'En proceso'})
                </span>
             </div>

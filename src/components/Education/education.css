@@ -45,3 +45,31 @@
 .study-ongoing {
    color: var(--blue);
 }
+
+@media (max-width: 1000px) {
+   .studies {
+      font-size: 18px;
+   }
+}
+
+@media (max-width: 750px) {
+   .studies {
+      font-size: 14px;
+   }
+
+   .study {
+      align-items: start;
+      text-align: left;
+      gap: 0px;
+   }
+
+   .study-data {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      align-items: center;
+   }
+
+   .study-grade {
+      grid-column: 1 / 3;
+   }
+}

@@ -1,4 +1,5 @@
 .main-header {
+   width: 100%;
    display: flex;
    list-style-type: none;
    justify-content: space-around;
@@ -35,10 +36,25 @@
    color: white;
 }
 
-.main-header li {
+.main-header .item-header {
    cursor: pointer;
    display: flex;
    width: 120px;
    justify-content: center;
    align-items: center;
+}
+
+@media (max-width: 800px) {
+   .main-header .item-header {
+      display: none;
+   }
+
+   .item-menu {
+      background-color: black;
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      cursor: pointer;
+      padding-right: 15px;
+   }
 }

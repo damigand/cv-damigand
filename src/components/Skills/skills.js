@@ -1,14 +1,14 @@
 import './skills.css';
 import data from '@/data';
 
-export function sectionSkills() {
+export function sectionSkills(clear = false) {
    let skillElements = '';
    for (const skill of data.skills) {
       skillElements += itemSkill(skill);
    }
 
    return `
-      <section class="skills" id="skills">
+      ${clear ? '' : `<section class="skills spacing" id="skills">`}
          <div class="skills-data">
             ${skillElements}
          </div>
@@ -26,7 +26,7 @@ export function sectionSkills() {
                x
             </div>
          </div>
-      </section>
+         ${clear ? '' : `</section>`}
    `;
 }
 
@@ -65,7 +65,7 @@ export function filterSkillListeners() {
 
 function filteredSkills(level, clear = false) {
    if (clear) {
-      document.querySelector('section.skills').innerHTML = sectionSkills();
+      document.querySelector('section.skills').innerHTML = sectionSkills(true);
       filterSkillListeners();
       return;
    }
