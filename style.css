@@ -60,6 +60,10 @@ h1::after {
    margin: 0px auto;
 }
 
+h2 {
+   font-size: 35px;
+}
+
 .icon {
    width: 20px;
    height: 20px;
@@ -90,6 +94,12 @@ h1::after {
    }
 }
 
+@media (max-width: 700px) {
+   h2 {
+      font-size: 25px;
+   }
+}
+
 @media (max-width: 420px) {
    .spacing {
       padding-left: var(--px-s);
@@ -98,5 +108,9 @@ h1::after {
 
    h1 {
       font-size: 40px;
+   }
+
+   h2 {
+      font-size: 20px;
    }
 }

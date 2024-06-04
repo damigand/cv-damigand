@@ -1,7 +1,7 @@
 .contact-data {
    display: flex;
    flex-direction: column;
-   gap: 35px;
+   gap: 20px;
 }
 
 .contact-item {
@@ -11,4 +11,16 @@
    justify-content: center;
    font-size: 36px;
    gap: 5px;
+}
+
+@media (max-width: 700px) {
+   .contact-item {
+      font-size: 24px;
+   }
+}
+
+@media (max-width: 420px) {
+   .contact-item {
+      font-size: 16px;
+   }
 }
