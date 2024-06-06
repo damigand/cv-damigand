@@ -1,11 +1,11 @@
 import './projects.css';
 import data from '@/data';
 
+//Sección de proyectos
 export function sectionProjects() {
+   //Obtengo los proyectos de "data" y los pinto con un "for".
    const projects = data.projects;
-
    let projectElements = '';
-
    for (const project of projects) {
       projectElements += projectItem(project);
    }
@@ -18,6 +18,7 @@ export function sectionProjects() {
    `;
 }
 
+//Item de cada proyecto
 function projectItem(project) {
    return `
       <article class="project">

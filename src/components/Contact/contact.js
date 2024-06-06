@@ -1,9 +1,10 @@
 import './contact.css';
 import data from '@/data';
 
+//Sección del "contact"
 export function sectionContact() {
    return `
-      <section class="contact spacing">
+      <section class="contact spacing" id="contacto">
          <h1> Contacto </h1>
          <article class="contact-data">
             <div class="contact-item">

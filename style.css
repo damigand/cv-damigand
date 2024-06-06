@@ -78,6 +78,10 @@ h2 {
    display: none;
 }
 
+.block {
+   display: block;
+}
+
 .no-scroll {
    height: 100%;
    overflow: hidden;

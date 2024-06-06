@@ -1,6 +1,7 @@
 import './aboutme.css';
 import data from '../../../data';
 
+//Sección del "about me"
 export function sectionAbout() {
    return `
       <section class="aboutme spacing" id="sobremi">

@@ -1,11 +1,11 @@
 import './education.css';
 import data from '@/data';
 
+//Sección de estudios
 export function sectionEducation() {
+   //Obtengo los estudios de "data" y los recorro con un "for" para pintarlos
    const educations = data.education;
-
    let educationElements = '';
-
    for (const education of educations) {
       educationElements += educationItem(education);
    }
@@ -20,6 +20,7 @@ export function sectionEducation() {
    `;
 }
 
+//Cada item de estudios
 function educationItem(education) {
    return `
       <article class="study">

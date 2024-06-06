@@ -1,12 +1,15 @@
 import './experience.css';
 import data from '@/data';
 
+//Sección de experiencia laboral
 export function sectionExperience() {
+   //Obtengo la experiencia de "data" y la recorro con un "for" para pintarla.
    const experience = data.workExp;
    let expElements = '';
    for (const exp of experience) {
       expElements += expItem(exp);
    }
+
    return `
       <section class="experience spacing" id="exp">
          <h1>Experiencia</h1>
@@ -15,6 +18,7 @@ export function sectionExperience() {
    `;
 }
 
+//Item de cada experiencia laboral
 function expItem(exp) {
    return `
       <article class="exp-item">

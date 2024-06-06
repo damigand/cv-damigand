@@ -23,4 +23,9 @@
    .contact-item {
       font-size: 16px;
    }
+
+   .contact-item img {
+      width: 25px;
+      height: 25px;
+   }
 }

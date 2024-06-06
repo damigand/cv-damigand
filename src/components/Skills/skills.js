@@ -1,13 +1,19 @@
 import './skills.css';
 import data from '@/data';
 
+//Variables del "easter egg" al dar click sobre la skill "videojuegos"
+const numberRange = 100;
 var previousNumber;
-var currentNumber = Math.floor(Math.random() * 100);
+var currentNumber = Math.floor(Math.random() * numberRange);
 var rightGuess = 0;
 var wrongGuess = 0;
 var streak = 0;
 
+//Sección de habilidades
+//parámetro opcional "clear" para que se pinte bien la sección usando los filtros
+
 export function sectionSkills(clear = false) {
+   //Obtengo las skills de "data" y las pinto con un "for"
    let skillElements = '';
    for (const skill of data.skills) {
       skillElements += itemSkill(skill);
@@ -37,6 +43,7 @@ export function sectionSkills(clear = false) {
    `;
 }
 
+//Cada item de las habilidades
 function itemSkill(skill) {
    return `
       <article class="skill ${skill.name} level-${skill.level}">
@@ -45,6 +52,8 @@ function itemSkill(skill) {
    `;
 }
 
+//Filtros de habilidades por nivel, principiante: level-1, intermedio: level-2, avanzado: level-3
+//level-x para limpiar filtros.
 export function filterSkillListeners() {
    const skillFilters = document.querySelectorAll('.skill-filter');
 
@@ -70,6 +79,7 @@ export function filterSkillListeners() {
    });
 }
 
+//obtención de skills cuando se da click en uno de los filtros.
 function filteredSkills(level, clear = false) {
    if (clear) {
       document.querySelector('section.skills').innerHTML = sectionSkills(true);
@@ -86,6 +96,8 @@ function filteredSkills(level, clear = false) {
    div.innerHTML = elements;
 }
 
+//Sección del easter egg. Es un modal con el juego clásico "higher or lower", que trata de adivinar si
+//un número es mayor o menor que el anterior en un rango limitado de números.
 function easterEggSection() {
    return `
    <div class="easter-egg">
@@ -115,6 +127,7 @@ function easterEggSection() {
    `;
 }
 
+//Listener que abre el "modal" del easter egg cuando se da click sobre "Videojuegos"
 export function easterEgg() {
    var element = document.querySelector('.Videojuegos');
    element.addEventListener('click', (event) => {
@@ -139,12 +152,14 @@ export function easterEgg() {
    lowerButton.addEventListener('click', (event) => lower());
 }
 
+//Función ejecutada si el usuario piensa que el número será mayor.
+//Genera el siguiente número, los compara y ejecuta otros métodos según acierte o falle.
 function higher() {
-   var nextNumber = Math.floor(Math.random() * 100);
+   var nextNumber = Math.floor(Math.random() * numberRange);
 
-   //Bucle para prevenir repetidos
+   //Bucle para prevenir número repetido
    while (nextNumber == currentNumber) {
-      nextNumber = Math.floor(Math.random() * 100);
+      nextNumber = Math.floor(Math.random() * numberRange);
    }
 
    //Si acierta, true, si no, false
@@ -157,12 +172,14 @@ function higher() {
    }
 }
 
+//Función ejecutada si el usuario piensa que el número será menor.
+//Genera el siguiente número, los compara y ejecuta otros métodos según acierte o falle.
 function lower() {
-   var nextNumber = Math.floor(Math.random() * 100);
+   var nextNumber = Math.floor(Math.random() * numberRange);
 
-   //Bucle para prevenir repetidos
+   //Bucle para prevenir número repetido
    while (nextNumber == currentNumber) {
-      nextNumber = Math.floor(Math.random() * 100);
+      nextNumber = Math.floor(Math.random() * numberRange);
    }
 
    //Si acierta, true, si no, false
@@ -175,6 +192,7 @@ function lower() {
    }
 }
 
+//Función que actualiza los textos en pantalla e iguala el número anterior al generado para seguir con el juego.
 function updateNumber(resultado, number) {
    previousNumber = currentNumber;
    currentNumber = number;
@@ -189,6 +207,7 @@ function updateNumber(resultado, number) {
       </div>
    `;
 
+   //if que controla la racha del usuario, los aciertos y los fallos.
    if (resultado) {
       streak += 1;
       rightGuess += 1;
@@ -203,6 +222,8 @@ function updateNumber(resultado, number) {
    document.querySelector('.guess-streak').innerHTML = streak + ' aciertos seguidos';
 }
 
+//Animación para dar al usuario cierta sensación de acierto o fallo.
+//Cambia el borde a verde durante un segundo si acierta, y en rojo si falla.
 function animateContent(resultado) {
    const content = document.querySelector('.easter-egg .content');
 
@@ -213,10 +234,13 @@ function animateContent(resultado) {
    }
 }
 
+//Estas dos funciones añaden o quitan una clase, la cual tiene "overflow: hidden" en el "body" para que no haya scroll.
+//Función para evitar el "scroll" mientras el juego esté abierto.
 function preventScroll() {
    document.querySelector('body').classList.add('no-scroll');
 }
 
+//Función para habilitar el "scroll" mientras el juego esté cerrado.
 function allowScroll() {
    document.querySelector('body').classList.remove('no-scroll');
 }
