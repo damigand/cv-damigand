@@ -1,6 +1,6 @@
 import { mainHeader } from './src/components/Main-Header/main-header.js';
 import { sectionAbout } from './src/components/AboutMe/aboutme.js';
-import { sectionSkills, filterSkillListeners } from './src/components/Skills/skills.js';
+import { sectionSkills, filterSkillListeners, easterEgg } from './src/components/Skills/skills.js';
 import { sectionEducation } from './src/components/Education/education.js';
 import { sectionExperience } from './src/components/Experience/experience.js';
 import { sectionProjects } from './src/components/Projects/projects.js';
@@ -22,3 +22,4 @@ app.innerHTML = `
 
 //funcion de filtro en las "skills"
 filterSkillListeners();
+easterEgg();

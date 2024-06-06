@@ -27,22 +27,111 @@
 }
 
 .level-1 {
-   border: 2px solid var(--yellow);
+   border: 1px solid var(--yellow);
    color: var(--yellow);
 }
 
 .level-2 {
-   border: 2px solid var(--blue);
+   border: 1px solid var(--blue);
    color: var(--blue);
 }
 
 .level-3 {
-   border: 2px solid var(--green);
+   border: 1px solid var(--green);
    color: var(--green);
 }
 
 .level-x {
    color: var(--grey);
+}
+
+.easter-egg {
+   display: none;
+   text-align: center;
+   position: fixed;
+   z-index: 1;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   overflow: auto;
+   background-color: rgba(0, 0, 0, 0.4);
+}
+
+.easter-egg .content {
+   display: flex;
+   flex-direction: column;
+   gap: 15px;
+   border-color: white;
+   background-color: black;
+   margin: 15% auto;
+   padding: 20px;
+   border: 2px solid white;
+   border-radius: 25px;
+   width: 80%;
+   position: relative;
+}
+
+.random-number {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   gap: 20%;
+   font-size: 50px;
+}
+
+.prev-number {
+   color: #808080;
+   font-size: 30px;
+   align-self: center;
+}
+
+.next-number {
+   font-size: 24px;
+   align-self: center;
+}
+
+.guess-buttons {
+   display: flex;
+   justify-content: center;
+   gap: 5%;
+   font-size: 24px;
+}
+
+.stats {
+   display: flex;
+   justify-content: center;
+   gap: 5%;
+}
+
+.higher,
+.lower {
+   cursor: pointer;
+   border: 1px solid white;
+   padding: 3px 10px;
+   border-radius: 10px;
+}
+
+.right-guess {
+   color: var(--green);
+}
+
+.wrong-guess {
+   color: var(--red);
+}
+
+.guess-streak {
+   color: var(--blue);
+}
+
+.easter-egg .close {
+   color: #aaa;
+   position: absolute;
+   right: 15px;
+   top: 5px;
+   font-size: 28px;
+   font-weight: bold;
+   cursor: pointer;
 }
 
 @media (max-width: 420px) {

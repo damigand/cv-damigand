@@ -6,7 +6,7 @@
    --yellow: rgba(250, 248, 142, 0.6);
    --blue: rgba(173, 216, 230, 0.8);
    --green: rgba(144, 238, 144, 1);
-
+   --red: rgb(255, 137, 137);
    --px-l: 10%;
    --px-m: 7%;
    --px-s: 3%;
@@ -76,6 +76,11 @@ h2 {
 
 .hidden {
    display: none;
+}
+
+.no-scroll {
+   height: 100%;
+   overflow: hidden;
 }
 
 #sobremi,
